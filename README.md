@@ -1,4 +1,7 @@
-# wcf
-Test App for WCF Feature Request Application
+# Feature Request Application
 
-When I'm all done, I will have instructions here for running this application.
+This project is being developed in concert with the front end to be found at this repository:
+https://github.com/javatami/featurerequest-vue.git
+
+Instructions for Running:
+- Clone the project
