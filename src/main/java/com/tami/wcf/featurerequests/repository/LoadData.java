@@ -1,7 +1,6 @@
 package com.tami.wcf.featurerequests.repository;
 
 import com.tami.wcf.featurerequests.model.Client;
-import com.tami.wcf.featurerequests.model.FeatureStatus;
 import com.tami.wcf.featurerequests.model.ProductArea;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -24,9 +23,6 @@ public class LoadData {
            log.info("Loading " + productAreaRepository.save(new ProductArea("Billing")));
            log.info("Loading " + productAreaRepository.save(new ProductArea("Claims")));
            log.info("Loading " + productAreaRepository.save(new ProductArea("Reports")));
-           log.info("Loading " + featureStatusRepository.save(new FeatureStatus("Completed")));
-           log.info("Loading " + featureStatusRepository.save(new FeatureStatus("Canceled")));
-           log.info("Loading " + featureStatusRepository.save(new FeatureStatus("Prioritized")));
         };
     }
 }

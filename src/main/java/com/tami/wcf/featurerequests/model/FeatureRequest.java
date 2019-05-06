@@ -35,19 +35,14 @@ public class FeatureRequest {
     @JoinColumn(name = "productId")
     private ProductArea productArea;
 
-    @ManyToOne
-    @JoinColumn(name = "groupId")
-    private FeatureStatus featureStatus;
-
     public FeatureRequest() {}
 
-    public FeatureRequest(String title, String description, Client client, LocalDate targetDate, ProductArea productArea, FeatureStatus status) {
+    public FeatureRequest(String title, String description, Client client, LocalDate targetDate, ProductArea productArea) {
         this.title = title;
         this.description = description;
         this.client = client;
         this.targetDate = targetDate;
         this.productArea = productArea;
-        this.featureStatus = status;
     }
 
 

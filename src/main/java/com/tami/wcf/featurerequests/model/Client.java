@@ -5,7 +5,6 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.LinkedList;
 
 @Data
 @Entity
@@ -15,13 +14,11 @@ public class Client {
     @GeneratedValue
     private Long clientId;
     private String clientName;
-    private LinkedList<FeatureRequest> features;
 
     public Client() {}
 
-    public Client(String clientName, LinkedList<FeatureRequest> features) {
+    public Client(String clientName) {
         this.clientName = clientName;
-        this.features = features;
     }
 
 }
