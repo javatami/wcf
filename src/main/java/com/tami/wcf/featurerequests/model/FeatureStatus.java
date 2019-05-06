@@ -1,5 +1,6 @@
 package com.tami.wcf.featurerequests.model;
 
+
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -9,18 +10,18 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class ProductArea {
+public class FeatureStatus {
 
     @Id
     @GeneratedValue
-    Long productAreaId;
+    private Long featureStatusId;
 
-    @Column(name = "name")
-    String name;
+    @Column(name = "status")
+    private String status;
 
-    public ProductArea() {}
-
-    public ProductArea(String name) {
-        this.name = name;
+    public FeatureStatus(String status) {
+        this.status = status;
     }
+
+    public FeatureStatus() {}
 }
