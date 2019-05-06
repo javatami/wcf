@@ -13,12 +13,11 @@ public class LoadData {
 
     @Bean
     CommandLineRunner initClients(ClientRepository clientRepository,
-                                  ProductAreaRepository productAreaRepository,
-                                  FeatureStatusRepository featureStatusRepository) {
+                                  ProductAreaRepository productAreaRepository) {
         return args -> {
-           log.info("Loading " + clientRepository.save(new Client("Client A", null)));
-           log.info("Loading " + clientRepository.save(new Client("Client B", null)));
-           log.info("Loading " + clientRepository.save(new Client("Client C", null)));
+           log.info("Loading " + clientRepository.save(new Client("Client A")));
+           log.info("Loading " + clientRepository.save(new Client("Client B")));
+           log.info("Loading " + clientRepository.save(new Client("Client C")));
            log.info("Loading " + productAreaRepository.save(new ProductArea("Policies")));
            log.info("Loading " + productAreaRepository.save(new ProductArea("Billing")));
            log.info("Loading " + productAreaRepository.save(new ProductArea("Claims")));
