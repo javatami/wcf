@@ -12,5 +12,6 @@ This project would be integrated into a larger project. Therefore, I made decisi
 - No security as I assume it would be integrated into a single sign on solution
 
 ## ToDo (unrelated to code):
-- Finish README
-- Finish Swagger doc
+- README
+- Swagger doc
+- Containerize

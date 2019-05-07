@@ -24,6 +24,9 @@ public class FeatureRequest {
     @Column(name = "description")
     private String description;
 
+    @Column(name = "priority")
+    private Integer priority;
+
     @ManyToOne
     @JoinColumn(name = "clientId")
     private Client client;
@@ -37,9 +40,10 @@ public class FeatureRequest {
 
     public FeatureRequest() {}
 
-    public FeatureRequest(String title, String description, Client client, LocalDate targetDate, ProductArea productArea) {
+    public FeatureRequest(String title, String description, Integer priority, Client client, LocalDate targetDate, ProductArea productArea) {
         this.title = title;
         this.description = description;
+        this.priority = priority;
         this.client = client;
         this.targetDate = targetDate;
         this.productArea = productArea;
