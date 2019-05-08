@@ -5,6 +5,8 @@ https://github.com/javatami/features-vue
 
 ## Instructions for Running:
 - Clone the project
+- Navigate to the directory in a terminal
+- ./mvnw spring-boot:run
 
 ## Assumptions:
 This project would be integrated into a larger project. Therefore, I made decisions regarding the following:
